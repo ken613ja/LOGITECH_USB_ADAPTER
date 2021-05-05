@@ -11,7 +11,7 @@
 #include <Joystick.h>
 
 // Create the Joystick
-Joystick_ Joystick;
+Joystick;
 
 // H-shifter mode analog axis thresholds
 #define HS_XAXIS_12        400
@@ -139,8 +139,4 @@ if( _isreverse == 1 ){
    delay(50);
 }
 
-void desactivar(){
-  // Depress virtual button for current gear
-  for(int i = 0; i <= 10 ; i++ )  Joystick.setButton(i, LOW);
-}
 
